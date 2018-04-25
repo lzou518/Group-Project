@@ -1,9 +1,10 @@
 # Group-Project
 
 1. Which hotel has the most reviews?
-```SELECT DISTINCT hotel_name,
-   MAX(total_number_of_reviews) as max
-   from datasets.hotel_reviews 
+```
+SELECT DISTINCT hotel_name,
+MAX(total_number_of_reviews) as max
+from datasets.hotel_reviews 
 GROUP BY 1
 ORDER BY max DESC
 ```
