@@ -1,11 +1,11 @@
-# Group-Project
+## Group-Project
 
-What does the dataset describe?
+##What does the dataset describe?
 ```
 This dataset contains 515,000 customer reviews and scoring of 1493 luxury hotels across Europe. Meanwhile, the geographical location of hotels is also provided for further analysis.
 ```
 
-What are the columns?
+##What are the columns?
 ```
 Our dataset contains 17 columns. The description of each field is as below:
 Hotel Address: Address of hotel. 
@@ -28,9 +28,9 @@ long: longitude of the hotel
 
 ```
 
-
+## Question 1
 1. Which hotel has the most reviews?
-```
+```sql
 SELECT DISTINCT hotel_name,
 MAX(total_number_of_reviews) as max
 from datasets.hotel_reviews 
@@ -43,7 +43,7 @@ Hotel Da Vinci = 16670
 ![Group-Project](Picture1.jpg)
 
 2. What is the average of total negative reviews' word counts?
-```
+```sql
 SELECT avg(review_total_negative_word_counts)
 FROM datasets.hotel_reviews
 ```
@@ -51,14 +51,14 @@ FROM datasets.hotel_reviews
 
 
 3. What is the average of total positive reviews' word counts?
-```
+```sql
 select avg(review_total_positive_word_counts) from  datasets.hotel_reviews
 ```
 17.77645820164502
 
 
 4.Which hotels have the top rating? Show the top 10.
-```
+```sql
 SELECT hotel_name, average_score
 FROM datasets.hotel_reviews 
 GROUP BY hotel_name,average_score 
@@ -78,7 +78,7 @@ Hotel_name - average_score
 ![Group-Project](Picture4.jpg)
 
 5.Which hotels have the worst rating? Show the top 10.
-```
+```sql
 SELECT hotel_name, average_score 
 FROM datasets.hotel_reviews 
 GROUP BY hotel_name,average_score
@@ -100,7 +100,7 @@ Gainsborough Hotel - 6.9
 ![Group-Project](Picture5.jpg)
 
 6.Which hotels had the most negative reviews in the summertime (June-Aug)? Show top 10.
-```
+```sql
 SELECT hotel_name, 
 COUNT(negative_review) as negative 
 FROM datasets.hotel_reviews 
@@ -124,7 +124,7 @@ Park Plaza London Riverbank - 489
 ![Group-Project](Picture6.jpg)
 
 7.Which hotels had the most positive reviews in the summertime (June-Aug)? Show top 10.
-```
+```sql
 SELECT hotel_name,
 COUNT(positive_review) as positive 
 FROM datasets.hotel_reviews 
@@ -149,7 +149,7 @@ Hotel Da Vinci - 539
 ![Group-Project](Picture7.jpg)
 
 8.Which countries left the most negative reviews?
-```
+```sql
 SELECT reviewer_nationality,count(negative_review)
 as negative
 FROM datasets.hotel_reviews
@@ -177,8 +177,7 @@ Netherlands
 ![Group-Project](Picture8.jpg)
 
 9.Which countries left the most positive reviews?
-
-```
+```sql
 SELECT reviewer_nationality,count(positive_review)
 as positive
 FROM datasets.hotel_reviews
@@ -206,7 +205,7 @@ Netherlands
 ![Group-Project](Picture9.jpg)
 
 10.Which hotels get the most reviews that a particular reviewer has given?
-```
+```sql
 SELECT hotel_name,MAX(total_number_of_reviews_reviewer_has_given) max
 FROM datasets.hotel_reviews
 GROUP BY hotel_name
