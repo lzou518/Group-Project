@@ -1,11 +1,12 @@
 ## Group-Project
 
-##What does the dataset describe?
+## Description
+What does the dataset describe?
 ```
 This dataset contains 515,000 customer reviews and scoring of 1493 luxury hotels across Europe. Meanwhile, the geographical location of hotels is also provided for further analysis.
 ```
 
-##What are the columns?
+What are the columns?
 ```
 Our dataset contains 17 columns. The description of each field is as below:
 Hotel Address: Address of hotel. 
@@ -42,6 +43,8 @@ Hotel Da Vinci = 16670
 
 ![Group-Project](Picture1.jpg)
 
+## Question 2
+
 2. What is the average of total negative reviews' word counts?
 ```sql
 SELECT avg(review_total_negative_word_counts)
@@ -49,14 +52,14 @@ FROM datasets.hotel_reviews
 ```
 18.539450263505888
 
-
+## Question 3
 3. What is the average of total positive reviews' word counts?
 ```sql
 select avg(review_total_positive_word_counts) from  datasets.hotel_reviews
 ```
 17.77645820164502
 
-
+## Question 4
 4.Which hotels have the top rating? Show the top 10.
 ```sql
 SELECT hotel_name, average_score
@@ -76,6 +79,8 @@ Hotel_name - average_score
  Ham Yard Hotel - 9.5
 
 ![Group-Project](Picture4.jpg)
+
+## Question 5
 
 5.Which hotels have the worst rating? Show the top 10.
 ```sql
@@ -98,6 +103,8 @@ Villa Eugenie - 6.8
 Gainsborough Hotel - 6.9
 
 ![Group-Project](Picture5.jpg)
+
+## Question 6
 
 6.Which hotels had the most negative reviews in the summertime (June-Aug)? Show top 10.
 ```sql
@@ -123,6 +130,8 @@ Park Plaza London Riverbank - 489
 
 ![Group-Project](Picture6.jpg)
 
+## Question 7
+
 7.Which hotels had the most positive reviews in the summertime (June-Aug)? Show top 10.
 ```sql
 SELECT hotel_name,
@@ -147,6 +156,8 @@ Intercontinental London The O2 - 548
 Hotel Da Vinci - 539
 
 ![Group-Project](Picture7.jpg)
+
+## Question 8
 
 8.Which countries left the most negative reviews?
 ```sql
@@ -176,6 +187,8 @@ Netherlands
  
 ![Group-Project](Picture8.jpg)
 
+## Question 9
+
 9.Which countries left the most positive reviews?
 ```sql
 SELECT reviewer_nationality,count(positive_review)
@@ -203,6 +216,8 @@ Netherlands
 8177
 
 ![Group-Project](Picture9.jpg)
+
+## Question 10
 
 10.Which hotels get the most reviews that a particular reviewer has given?
 ```sql
