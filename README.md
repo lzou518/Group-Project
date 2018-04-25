@@ -13,7 +13,7 @@ Hotel Da Vinci = 16670
 
 2. What is the average of total negative reviews' word counts?
 ```select avg(review_total_negative_word_counts)
-from  datasets.hotel_reviews
+from datasets.hotel_reviews
 ```
 18.539450263505888
 
