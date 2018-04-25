@@ -46,6 +46,7 @@ Hotel_name - average_score
  Taj 51 Buckingham Gate Suites and Residences - 9.5
  Ham Yard Hotel - 9.5
 
+![Group-Project](Picture4.jpg)
 
 5.Which hotels have the worst rating? Show the top 10.
 ```
@@ -67,6 +68,7 @@ Bloomsbury Palace Hotel - 6.8
 Villa Eugenie - 6.8
 Gainsborough Hotel - 6.9
 
+![Group-Project](Picture5.jpg)
 
 6.Which hotels had the most negative reviews in the summertime (June-Aug)? Show top 10.
 ```
@@ -90,6 +92,7 @@ Hilton London Metropole - 525
 Hotel Da Vinci - 499
 Park Plaza London Riverbank - 489
 
+![Group-Project](Picture6.jpg)
 
 7.Which hotels had the most positive reviews in the summertime (June-Aug)? Show top 10.
 ```
@@ -113,7 +116,8 @@ The Student Hotel Amsterdam City - 568
 Holiday Inn London Kensington - 553
 Intercontinental London The O2 - 548
 Hotel Da Vinci - 539
- 
+
+![Group-Project](Picture7.jpg)
 
 8.Which countries left the most negative reviews?
 ```
@@ -141,6 +145,7 @@ Saudi Arabia
 Netherlands
 6725
  
+![Group-Project](Picture8.jpg)
 
 9.Which countries left the most positive reviews?
 
@@ -169,6 +174,7 @@ Saudi Arabia
 Netherlands
 8177
 
+![Group-Project](Picture9.jpg)
 
 10.Which hotels get the most reviews that a particular reviewer has given?
 ```
@@ -191,5 +197,5 @@ Best Western Palm Hotel
 The Grosvenor
 315
 
-
+![Group-Project](Picture10.jpg)
 
