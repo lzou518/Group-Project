@@ -10,7 +10,8 @@ ORDER BY max DESC
 ```
 
 Hotel Da Vinci = 16670
- 
+
+![Group-Project](Picture1.jpg)
 
 2. What is the average of total negative reviews' word counts?
 ```
