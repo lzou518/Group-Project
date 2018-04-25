@@ -3,7 +3,8 @@
 ## Description
 What does the dataset describe?
 ```
-This dataset contains 515,000 customer reviews and scoring of 1493 luxury hotels across Europe. Meanwhile, the geographical location of hotels is also provided for further analysis.
+This dataset contains 515,000 customer reviews and scoring of 1493 luxury hotels across Europe.
+Meanwhile, the geographical location of hotels is also provided for further analysis.
 ```
 
 What are the columns?
