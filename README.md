@@ -13,38 +13,42 @@ Hotel Da Vinci = 16670
  
 
 2. What is the average of total negative reviews' word counts?
-```select avg(review_total_negative_word_counts)
-from datasets.hotel_reviews
+```
+SELECT avg(review_total_negative_word_counts)
+FROM datasets.hotel_reviews
 ```
 18.539450263505888
 
 
 3. What is the average of total positive reviews' word counts?
-```select avg(review_total_positive_word_counts) from  datasets.hotel_reviews
+```
+select avg(review_total_positive_word_counts) from  datasets.hotel_reviews
 ```
 17.77645820164502
 
 
 4.Which hotels have the top rating? Show the top 10.
-```SELECT hotel_name, average_score
+```
+SELECT hotel_name, average_score
 FROM datasets.hotel_reviews 
 GROUP BY hotel_name,average_score 
 ORDER BY average_score DESC 
 ```
 Hotel_name - average_score
-Ritz Paris - 9.8
-Hotel The Serras - 9.6
-H tel de La Tamise Esprit de France - 9.6
-Haymarket Hotel - 9.6
-41 - 9.6
-H10 Casa Mimosa 4 Sup - 9.6
-Hotel Casa Camper - 9.6
-Taj 51 Buckingham Gate Suites and Residences - 9.5
-Ham Yard Hotel - 9.5
+ Ritz Paris - 9.8
+ Hotel The Serras - 9.6
+ H tel de La Tamise Esprit de France - 9.6
+ Haymarket Hotel - 9.6
+ 41 - 9.6
+ H10 Casa Mimosa 4 Sup - 9.6
+ Hotel Casa Camper - 9.6
+ Taj 51 Buckingham Gate Suites and Residences - 9.5
+ Ham Yard Hotel - 9.5
 
 
 5.Which hotels have the worst rating? Show the top 10.
-```SELECT hotel_name, average_score 
+```
+SELECT hotel_name, average_score 
 FROM datasets.hotel_reviews 
 GROUP BY hotel_name,average_score
 ORDER BY average_score ASC
@@ -64,7 +68,8 @@ Gainsborough Hotel - 6.9
 
 
 6.Which hotels had the most negative reviews in the summertime (June-Aug)? Show top 10.
-```SELECT hotel_name, 
+```
+SELECT hotel_name, 
 COUNT(negative_review) as negative 
 FROM datasets.hotel_reviews 
 WHERE NOT negative_review= 'No Negative' AND review_date BETWEEN '6/1/17' AND '8/31/17'
@@ -86,7 +91,8 @@ Park Plaza London Riverbank - 489
 
 
 7.Which hotels had the most positive reviews in the summertime (June-Aug)? Show top 10.
-```SELECT hotel_name,
+```
+SELECT hotel_name,
 COUNT(positive_review) as positive 
 FROM datasets.hotel_reviews 
 WHERE NOT positive_review= 'No Positive' AND review_date BETWEEN '6/1/17' AND '8/31/17'
@@ -109,7 +115,8 @@ Hotel Da Vinci - 539
  
 
 8.Which countries left the most negative reviews?
-```SELECT reviewer_nationality,count(negative_review)
+```
+SELECT reviewer_nationality,count(negative_review)
 as negative
 FROM datasets.hotel_reviews
 where NOT negative_review='No Negative'  
@@ -136,7 +143,8 @@ Netherlands
 
 9.Which countries left the most positive reviews?
 
-```SELECT reviewer_nationality,count(positive_review)
+```
+SELECT reviewer_nationality,count(positive_review)
 as positive
 FROM datasets.hotel_reviews
 where NOT  positive_review = 'No Positive'
@@ -162,7 +170,8 @@ Netherlands
 
 
 10.Which hotels get the most reviews that a particular reviewer has given?
-```SELECT hotel_name,MAX(total_number_of_reviews_reviewer_has_given) max
+```
+SELECT hotel_name,MAX(total_number_of_reviews_reviewer_has_given) max
 FROM datasets.hotel_reviews
 GROUP BY hotel_name
 order by max DESC
