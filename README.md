@@ -246,4 +246,6 @@ The Grosvenor
 
 
 
-test
+Overview:
+
+If we were to be part of an investment company that invests in hotels, we would be able to use our data to narrow in on some of the best hotels. Our data tells us which hotels would be the best to invest in at the right time as well. We see this from the different reviews that each hotel is given, whether positive or negative, along with what time of the year they are given to the hotel. We also gathered data about the ratings as well which can aid us in making decisions whether we would nvest in certain hotels or not and in what time we should do so.
